@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Election Countdown</title>
+    <title>Countdown</title>
     <script>
-        // JavaScript to calculate days until Election Day
         function calculateCountdown() {
             const electionDate = new Date("2024-11-05");
             const currentDate = new Date();
             const timeDifference = electionDate - currentDate;
             const daysLeft = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
-            document.getElementById("countdown").textContent = daysLeft;
+            document.write(daysLeft); // Outputs the number directly
         }
     </script>
 </head>
 <body onload="calculateCountdown()">
-    <div id="countdown"></div>
 </body>
 </html>
